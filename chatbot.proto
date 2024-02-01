@@ -1,0 +1,11 @@
+syntax = "proto3";
+package chatPack;
+service ChatService {
+rpc ChatFunc (ChatRequest) returns (ChatReply) {}
+}
+message ChatRequest {
+string name = 1;
+}
+message ChatReply {
+string result = 1;
+}
